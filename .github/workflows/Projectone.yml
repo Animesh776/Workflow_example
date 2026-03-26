@@ -38,7 +38,7 @@ jobs:
           install-chromedriver: true
 
       - name: Run Selenium Scraper
-        run: mvn compile exec:java -D"exec.mainClass"="MYPROJECTONE"
+        run: mvn compile exec:java -D"exec.mainClass"="org.testing.Main"
         env:
           USER_ID: ${{ secrets.user_email }}
           USER_PASS: ${{ secrets.user_pass }}
