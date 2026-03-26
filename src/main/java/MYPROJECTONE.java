@@ -36,9 +36,11 @@ public class MYPROJECTONE {
         }
 
 //Login page
-
-        driver.findElement(By.name("email")).sendKeys("animeshsrivastava881@gmail.com");
-        driver.findElement(By.name("password")).sendKeys("Ronaldo");
+		String userId = System.getenv("USER_ID");
+        String userPass = System.getenv("USER_PASS");
+			
+        driver.findElement(By.name("email")).sendKeys(userId);
+        driver.findElement(By.name("password")).sendKeys(userPass);
         driver.findElement(By.xpath("//*[@id=\"form\"]/div/div/div[1]/div/form/button")).click();
 
 
