@@ -43,7 +43,3 @@ jobs:
           USER_ID: ${{ secrets.user_email }}
           USER_PASS: ${{ secrets.user_pass }}
           CHROME_OPTIONS: "--headless --disable-gpu --no-sandbox"
-              git push origin $BRANCH
-          else
-              echo "No changes detected in the target path. Skipping push."
-          fi
